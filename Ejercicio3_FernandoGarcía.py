@@ -1,7 +1,7 @@
 # Fernando García Fuentes A01800375
 # 25 de agosto de 2023
 
-# Función donde se reciben los kilometros
+# Función donde se calcula el precio de los boletos
 def cowboys(a,b,c):
     totBoletos = a+b+c
     totCosto = a * 1050 + b * 750 + c * 450
