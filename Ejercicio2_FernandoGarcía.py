@@ -1,12 +1,18 @@
 # Fernando García Fuentes A01800375
-# Variables
-ventaUno = int(input('¿Cúal fue tu primer venta?: '))
-ventaDos = int(input('¿Cúal fue tu segunda venta?: '))
-ventaTres = int(input('¿Cúal fue tu tercer venta?: '))
+# 25 de agosto de 2023
+# Modulos
+from math import pow
 
+# Función donde se reciben los kilometros
+def kilometros(p , e):
+    bmi = round(p / pow(e, 2) ,2)
 
-# Operaciones
-comision = (ventaUno + ventaDos + ventaTres) * 0.10
+    print(f'Tu BMI es {bmi}')
 
-# Prints
-print(f'Tu comisión es de ${comision}')
+# Función que pide los datos al usuario
+def modyMass():
+    peso = int(input('Dame tu peso en kilogramos: '))
+    estatura = float(input('Dame tu estatura en metros: '))
+    kilometros(peso, estatura)
+
+modyMass()

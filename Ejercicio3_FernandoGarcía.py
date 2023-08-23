@@ -1,10 +1,18 @@
 # Fernando García Fuentes A01800375
-# Variables
-dolar = 17.40
-pesos = int(input('¿Cuántos pesos tienen?: '))
+# 25 de agosto de 2023
 
-# Operaciones
-equivalente = float(pesos/dolar)
+# Función donde se reciben los kilometros
+def cowboys(a,b,c):
+    totBoletos = a+b+c
+    totCosto = a * 1050 + b * 750 + c * 450
 
-# Prints
-print(f'La cantidad de dolares que tienes son ${equivalente}')
+    print(f'El total a pagar por {totBoletos} es de ${totCosto}')
+
+# Función que pide los datos al usuario
+def datos():
+    claseA = int(input('Cuantos boletos para la clase A: '))
+    claseB = int(input('Cuantos boletos para la clase B: '))
+    claseC = int(input('Cuantos boletos para la clase C: '))
+    cowboys(claseA, claseB, claseC)
+
+datos()
